@@ -1,16 +1,7 @@
-<html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-
-<body>
-    <h1>hello html - PHP primer</h1>
-    <h1>this is a title</h1>
-
-    <!-- 
+<?php
+include './includes/header.php';
+?>
+<!-- 
     //declre variables
     //$aziz = 'A';
     /*  $age = '21';
@@ -43,33 +34,33 @@
     
      -->
 
-    <?php
-    $str1  = "houssem";
-    $str2 = "salem";
-    echo "hello " . $str1 . " and " . $str2;
-    echo "<h2>" . strtoupper($str1) . "</h2>";
-    echo strtolower($str1);
-    echo 'repeat string ' . str_repeat($str2, 3);
-    echo ucfirst($str1) . "</br>";
-    echo ucwords($str2) . "</br>";
-    echo substr($str2, 0, 2) . "</br>";
-    echo "</hr>";
-    echo "</br>";
-    echo "the position of h at this string is " . strpos($str1, 'h') . '</br>';
-    echo "find character 'e' in the second variable " . strchr($str2, 'e') . '</br>';
-    echo "find character 'o' in the first variable " . strchr($str1, 'o') . '</br>';
-    echo strlen($str2);
-    $var2 = ' A B C ';
-    echo
-        "testing" . trim($var2) . "</br>";
-    echo
-        "testing" . ltrim($var2) . "</br>";
-    echo
-        "testing" . rtrim($var2) . "</br>";
+<?php
+$str1  = "houssem";
+$str2 = "salem";
+echo "hello " . $str1 . " and " . $str2;
+echo "<h2>" . strtoupper($str1) . "</h2>";
+echo strtolower($str1);
+echo 'repeat string ' . str_repeat($str2, 3);
+echo ucfirst($str1) . "</br>";
+echo ucwords($str2) . "</br>";
+echo substr($str2, 0, 2) . "</br>";
+echo "</hr>";
+echo "</br>";
+echo "the position of h at this string is " . strpos($str1, 'h') . '</br>';
+echo "find character 'e' in the second variable " . strchr($str2, 'e') . '</br>';
+echo "find character 'o' in the first variable " . strchr($str1, 'o') . '</br>';
+echo strlen($str2);
+$var2 = ' A B C ';
+echo
+    "testing" . trim($var2) . "</br>";
+echo
+    "testing" . ltrim($var2) . "</br>";
+echo
+    "testing" . rtrim($var2) . "</br>";
 
-    echo 'replace string with another : ' . str_replace("s", "K", $str2);
-    ?>
+echo 'replace string with another : ' . str_replace("s", "K", $str2);
 
-</body>
-
-</html>
+?>
+<?php
+include './includes/footer.php'
+?>
